@@ -18,6 +18,7 @@
   <div class="p_prldr">
     <span class="svg_anm"></span>
   </div>
+
   <header>
     <div class="wrapper">
       <div class="top-header">
@@ -418,7 +419,9 @@
 
         <div class="our-work__text subtitle-text">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
           </p>
         </div>
       </div>
@@ -487,14 +490,55 @@
     </div>
   </section>
 
+  <section class="slider-two">
+    <div class="wrapper container_slider">
+      <ul id="slides">
+        <li class="slider-two__slide showing">
+          <blockquote>
+            <i class="fas fa-chevron-left arrow-left"></i>
+            <p>“Sunt porro error a blanditiis vitae aperiam animi neque sed at consequuntur corporis dignissimos eius, ad distinctio!”</p>
+            <cite>John Tolkien</cite>
+            <i class="fas fa-chevron-right arrow-right"></i>
+          </blockquote>
+        </li>
+        <li class="slider-two__slide">
+          <blockquote>
+            <i class="fas fa-chevron-left arrow-left"></i>
+            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.”
+            </p>
+            <cite>Joshua Earle</cite>
+            <i class="fas fa-chevron-right arrow-right"></i>
+          </blockquote>
+        </li>
+        <li class="slider-two__slide">
+          <blockquote>
+            <i class="fas fa-chevron-left arrow-left"></i>
+            <p>”Beatae pariatur officiis nulla obcaecati iusto porro, a facilis sint iste odit dolorum necessitatibus in
+              facere omnis explicabo. Odit, maiores?”</p>
+            <cite>Legolas</cite>
+            <i class="fas fa-chevron-right arrow-right"></i>
+          </blockquote>
+        </li>
+        <li class="slider-two__slide">
+          <blockquote>
+            <i class="fas fa-chevron-left arrow-left"></i>
+            <p>“One time we saw some hookers but when we got closer we realized it was Motley Crue.”</p>
+            <cite>Alber Kami</cite>
+            <i class="fas fa-chevron-right arrow-right"></i>
+          </blockquote>
+        </li>
+      </ul>
+    </div>
+  </section>
+
   <script src="scripts/main.js"></script>
   <script src="scripts/slider-two.js"></script>
   <script>
     $(window).on('load', function () {
       var $preloader = $('.p_prldr'),
         $svgAnm = $preloader.find('.svg_anm');
-      $svgAnm.fadeOut(1000);
-      $preloader.delay(700).fadeOut('200');
+      $svgAnm.fadeOut(600);
+      $preloader.delay(500).fadeOut('200');
     });
   </script>
 </body>

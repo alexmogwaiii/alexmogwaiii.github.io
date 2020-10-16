@@ -137,4 +137,32 @@ $(document).ready(function () {
 
   // slider two
 
+  let slides = document.querySelectorAll('#slides .slider-two__slide');
+  let currentSlider = 0;
+  let slideInterval = setInterval(nextSlider, 6000);
+
+  function nextSlider() {
+    slides[currentSlider].className = 'slider-two__slide';
+    currentSlider = (currentSlider + 1) % slides.length;
+    slides[currentSlider].className = 'slider-two__slide showing';
+  }
+
+  function prevSlider() {
+    slides[currentSlider].className = 'slider-two__slide';
+    currentSlider = currentSlider - 1;
+    slides[currentSlider].className = 'slider-two__slide showing';
+  }
+
+
+  $('.slider-two__slide .arrow-right').click(function() {
+    if(currentSlider != slides.length) {
+      nextSlider();
+    }
+  });
+
+  $('.slider-two__slide .arrow-left').click(function() {
+    if(currentSlider != 0) {
+      prevSlider();
+    }
+  });
 });
