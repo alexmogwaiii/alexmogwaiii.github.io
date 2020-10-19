@@ -630,7 +630,8 @@ header {
   left: 0;
 }
 
-.slide p, .slider-two__slide p {
+.slide p,
+.slider-two__slide p {
   font-style: italic;
   padding: 0 75px 0 285px;
   line-height: 1.5;
@@ -642,7 +643,8 @@ header {
   background-color: #f8f8f8;
 }
 
-.slide cite, .slider-two__slide cite {
+.slide cite,
+.slider-two__slide cite {
   font-family: "Kaushan Script", cursive;
   color: #333333;
   font-size: 2.2rem;
@@ -650,7 +652,8 @@ header {
   margin-left: 35rem;
 }
 
-.slide cite::before, .slider-two__slide cite::before {
+.slide cite::before,
+.slider-two__slide cite::before {
   content: "";
   width: 6rem;
   display: block;
@@ -661,7 +664,8 @@ header {
   left: -65px;
 }
 
-.slide blockquote, .slider-two__slide blockquote {
+.slide blockquote,
+.slider-two__slide blockquote {
   text-align: left;
   position: relative;
 }
@@ -824,50 +828,65 @@ header {
 
 .our-team__gallery {
   display: flex;
-  flex-wrap: wrap;
-  cursor: pointer;
+  min-height: 780px;
+  cursor: grab
 }
 
 .our-team__gallery .gallery-content {
+  min-height: 390px;
   height: 100%;
   background: linear-gradient(to top,
-      rgba(252, 227, 138, 0.6),
-      rgba(243, 129, 129, 0.7)) no-repeat,
+      rgba(252, 227, 138, 0.5),
+      rgba(240, 89, 89, 0.6)) no-repeat,
     linear-gradient(to bottom,
-      rgba(252, 227, 138, 0.7),
-      rgba(252, 227, 138, 0.7)) no-repeat;
+      rgba(252, 227, 138, 0.5),
+      rgba(252, 227, 138, 0.6)) no-repeat;
   display: none;
 }
 
 .our-team__gallery .gallery-wrapper {
-  flex-grow: 1;
-  height: 380px;
-  width: 30%;
+  min-height: 390px;
+  height: 100%;
   background-repeat: no-repeat;
+  flex-grow: 10;
   background-size: cover;
+  background-position: center;
 }
 
-.our-team__gallery>div:nth-child(1) {
+.our-team__gallery .gallery-item {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+
+.gallery-item:nth-child(1) .gallery-wrapper:first-child {
   background-image: url(../img/g1.png);
 }
 
-.our-team__gallery>div:nth-child(2) {
+.gallery-item:nth-child(1) .gallery-wrapper:last-child {
   background-image: url(../img/g2.png);
 }
 
-.our-team__gallery>div:nth-child(3) {
+
+.gallery-item:nth-child(2) .gallery-wrapper:first-child {
   background-image: url(../img/g3.png);
 }
 
-.our-team__gallery>div:nth-child(4) {
+.gallery-item:nth-child(2) .gallery-wrapper:last-child {
   background-image: url(../img/g4.png);
 }
 
-.our-team__gallery>div:nth-child(5) {
+.gallery-item:nth-child(3) .gallery-wrapper:first-child {
+  background-image: url(../img/layer-34.png);
+  height: 780px;
+}
+
+.gallery-item:nth-child(4) .gallery-wrapper:first-child {
   background-image: url(../img/g6.png);
 }
 
-.our-team__gallery>div:nth-child(6) {
+.gallery-item:nth-child(4) .gallery-wrapper:last-child {
   background-image: url(../img/g7.png);
 }
 
@@ -877,7 +896,6 @@ header {
   align-items: center;
   color: #ffffff;
   position: relative;
-  top: 160px;
 }
 
 .our-team__img-titles i {
@@ -965,7 +983,8 @@ header {
 
 /** Arrows */
 
-.slider-two .arrow-right, .slider-two .arrow-left {
+.slider-two .arrow-right,
+.slider-two .arrow-left {
   position: absolute;
   color: #cccccc;
   font-size: 3rem;

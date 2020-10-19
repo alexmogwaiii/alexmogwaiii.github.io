@@ -127,13 +127,16 @@ $(document).ready(function () {
 
 
   // Fade in/out galerry
-
-  $('.gallery-wrapper').hover(function () {
-    $(this).children('div').stop(false, true).fadeIn(600);
-  }, function () {
-    $(this).children('div').stop(false, true).fadeOut(600);
+  $('.gallery-wrapper').hover(function(){
+    $(this).children('div').stop(false, true).fadeIn(500);
+    $(this).children('div').css({
+      'display':'flex',
+      'align-items': 'center',
+      'justify-content': 'center'
+    });
+  }, function() {
+    $(this).children('div').stop(false.true).fadeOut(600);
   });
-
 
   // slider two
 
@@ -149,7 +152,7 @@ $(document).ready(function () {
 
   function prevSlider() {
     slides[currentSlider].className = 'slider-two__slide';
-    currentSlider = currentSlider - 1;
+    currentSlider -= 1;
     slides[currentSlider].className = 'slider-two__slide showing';
   }
 
