@@ -142,7 +142,13 @@ $(document).ready(function () {
 
   let slides = document.querySelectorAll('#slides .slider-two__slide');
   let currentSlider = 0;
-  let slideInterval = setInterval(nextSlider, 6000);
+  let slideInterval = setInterval(nextSlider, 9000);
+
+  $('#slides').hover(function() {
+    clearInterval(slideInterval);
+  }, function() {
+    slideInterval = setInterval(nextSlider, 9000);
+  });
 
   function nextSlider() {
     slides[currentSlider].className = 'slider-two__slide';

@@ -472,8 +472,8 @@ header {
 .design {
   background: url(../img/layer-45.png) no-repeat, rgba(235, 235, 235, 0.85);
   background-blend-mode: screen;
-  /* background-size: contain; */
   background-position: 40% 25%;
+  background-attachment: fixed;
 }
 
 .design__content {
@@ -997,4 +997,239 @@ header {
 
 .slider-two .arrow-right {
   right: -25px;
+}
+
+
+/* ! HAPPY CLIENTS SECTION */
+
+.happy-clients {
+  background: url(../img/mountain_bg_1.png) no-repeat, rgba(235, 235, 235, 0.938);
+  background-blend-mode: screen;
+  background-position: 50%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.happy-clients__content {
+  padding-top: 10.9rem;
+}
+
+.happy-clients__feedback {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.happy-clients__subtitle {
+  padding-bottom: 14.4rem;
+}
+
+.feedback__item {
+  width: 50%;
+  padding-left: 20rem;
+  margin-bottom: 8rem;
+  position: relative;
+}
+
+.feedback__name {
+  text-transform: uppercase;
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.feedback__profession {
+  display: block;
+  font-size: 1.5rem;
+  color: #333333;
+  position: relative;
+  margin-bottom: 4.4rem;
+}
+
+.feedback__profession::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  border-bottom: 3px solid #f38181;
+  bottom: -17px;
+  left: 0;
+}
+
+.feedback__text {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  padding-right: 6.5rem;
+}
+
+.feedback__item::before {
+  content: '';
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  background-color: red;
+  width: 11rem;
+  height: 11rem;
+  left: 5.5rem;
+}
+
+.feedback__item:nth-child(1)::before {
+  background: url(../img/layer-47.jpg);
+}
+
+.feedback__item:nth-child(2)::before {
+  background: url(../img/layer-49.jpg);
+}
+
+.feedback__item:nth-child(3)::before {
+  background: url(../img/layer-50.jpg);
+}
+
+.feedback__item:nth-child(4)::before {
+  background: url(../img/layer-51.jpg);
+}
+
+/* ! OUR STORIES */
+
+.our-stories__header {
+  padding-top: 11.2rem;
+}
+
+.our-stories__subtitle {
+  padding-bottom: 9.2rem;
+}
+
+.our-stories__blogs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 11.8rem;
+}
+
+.blog__article {
+  flex-basis: 380px;
+}
+
+.blog__title {
+  text-transform: uppercase;
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 1.1rem;
+  font-weight: bolder;
+  display: block;
+}
+
+.blog__content {
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.blog__line {
+  width: 100%;
+  border-bottom: 2px solid #e5e5e5;
+  display: block;
+  margin-top: 2rem;
+  transition: .3s ease-in;
+}
+
+.blog__actions {
+  margin-top: 2rem;
+}
+
+.actions-blog__list {
+  display: flex;
+}
+
+.fa-eye,
+.fa-comment-dots {
+  color: #95e1d3;
+  font-size: 1.7rem;
+}
+
+.actions-blog__item {
+  margin-right: 1.8rem;
+}
+
+.actions-blog__views {
+  margin-right: 0.7rem;
+}
+
+.actions-blog__count {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.blog-img__link {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.blog__datetime {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #95e1d3;
+  color: #ffffff;
+  position: absolute;
+  padding: 1.5rem;
+  top: 15rem;
+  left: -1rem;
+}
+
+.blog-datetime__date {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.blog-datetime__month {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.blog__article:hover .blog__line {
+  border-color: #95e1d3;
+}
+
+/* ! OUR MAP */
+
+.our-map__content {
+  height: 20rem;
+}
+
+.our-map {
+  background: url(../img/bg_map.png) no-repeat, rgba(235, 235, 235, 0.938);
+  background-blend-mode: screen;
+  background-size: cover;
+}
+
+.our-map__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #f38181;
+  position: relative;
+  cursor: pointer;
+}
+
+.fa-map-marker-alt {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.open-map {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.our-map__content::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 6rem;
+  height: 0.3rem;
+  background-color: #f38181;
+  bottom: 5rem;
 }
