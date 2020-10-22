@@ -1249,7 +1249,7 @@ header {
   width: 100%;
   height: 1px;
   position: absolute;
-  background-color:#e5e5e5;
+  background-color: #e5e5e5;
   bottom: -40px;
 }
 
@@ -1347,6 +1347,7 @@ header {
   font-weight: bold;
   border: none;
   cursor: pointer;
+  -webkit-appearance: none;
 }
 
 .footer-item__header h4 {
@@ -1377,7 +1378,7 @@ header {
   object-fit: cover;
 }
 
-.footer-blog__img img{
+.footer-blog__img img {
   display: block;
 }
 
