@@ -51,11 +51,19 @@
 
       <div class="bottom-header">
         <ul class="bottom-header__sub-menu">
-          <li><span class="number-decor">
-              <span class="red_line-small"></span>01</span>Intro</li>
-          <li><span class="number-decor"></span>02</span>Work</li>
-          <li><span class="number-decor">03</span>About</li>
-          <li><span class="number-decor">04</span>Contacts</li>
+          <li>
+            <span class="number-decor">
+              <span class="red_line-small">01</span>Intro
+          </li>
+          <li>
+            <span class="number-decor">>02</span>Work
+          </li>
+          <li>
+            <span class="number-decor">03</span>About
+          </li>
+          <li>
+            <span class="number-decor">04</span>Contacts
+          </li>
         </ul>
       </div>
     </div>
@@ -187,8 +195,8 @@
               Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
             </p>
           </li>
+        </ul>
       </div>
-    </div>
     </div>
   </section>
 
@@ -639,10 +647,10 @@
             </a>
 
             <a href="#">
-              <time class="blog__datetime">
+              <div class="blog__datetime">
                 <span class="blog-datetime__date">15</span>
                 <span class="blog-datetime__month">Jan</span>
-              </time>
+              </div>
             </a>
           </div>
 
@@ -683,10 +691,10 @@
               <img src="img/layer-55.jpg" alt="#" class="blog__img">
             </a>
             <a href="#">
-              <time class="blog__datetime">
+              <div class="blog__datetime">
                 <span class="blog-datetime__date">15</span>
                 <span class="blog-datetime__month">Jan</span>
-              </time>
+              </div>
             </a>
           </div>
 
@@ -727,10 +735,10 @@
               <img src="img/layer-57.jpg" alt="#" class="blog__img">
             </a>
             <a href="#">
-              <time class="blog__datetime">
+              <div class="blog__datetime">
                 <span class="blog-datetime__date">15</span>
                 <span class="blog-datetime__month">Jan</span>
-              </time>
+              </div>
             </a>
           </div>
 
@@ -782,7 +790,7 @@
 
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2163.883972637759!2d24.00328655479162!3d49.8367035588076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add789e59c315%3A0xb7c7278b56b2c294!2z0J_QsNC8J9GP0YLQvdC40Log0KHRgtC10L_QsNC90YMg0JHQsNC90LTQtdGA0ZY!5e0!3m2!1suk!2sua!4v1603218092337!5m2!1suk!2sua"
-          width="900" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
+          width="900" height="500" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
           class="map">
         </iframe>
 
@@ -828,8 +836,9 @@
           </div>
 
           <form action="/" method="POST" class="feedback__form">
-            <input type="text" value="Your Email...">
-            <input type="submit" value="SUBSCRIBE">
+            <input name="Email" type="email" placeholder="Your Email..."
+              pattern="([A-Za-z0-9\.-]+)(@)([A-Za-z0-9\.-]+)(\.)([A-Za-z0-9]{2,})">
+            <input name="submit" type="submit" value="SUBSCRIBE">
           </form>
         </div>
 

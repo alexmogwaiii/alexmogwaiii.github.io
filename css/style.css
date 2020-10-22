@@ -930,8 +930,8 @@ header {
 }
 
 .slider-two__slide {
+  margin-top: 15rem;
   position: absolute;
-  padding-top: 14rem;
   left: 0px;
   top: 0px;
   width: 100%;
@@ -1163,6 +1163,19 @@ header {
   position: relative;
 }
 
+.blog-img__link a {
+  display: block;
+  overflow: hidden;
+}
+
+.blog__img {
+  transition: 1s;
+  display: block;
+}
+.blog-img__link a:hover .blog__img {
+  scale: 1.2;
+}
+
 .blog__datetime {
   display: flex;
   flex-direction: column;
@@ -1329,25 +1342,36 @@ header {
   display: flex;
 }
 
-.feedback__form input[type="text"] {
-  padding: 14px 14px 14px;
+.feedback__form input[type="email"] {
+  padding: 13px 14px;
   color: #cccccc;
   font-style: italic;
   width: 230px;
-  border: none;
-  outline: 1px solid #e7e7e7;
+  border: 1px solid #e7e7e7;
+  transition: 0.5s;
+}
+
+.feedback__form input[type="email"]:focus {
+  border-color: #95e1d3;
+  color: #b1adad;
+}
+
+.feedback__form input[type="email"]:invalid {
+  border-color: red;
+  box-shadow: none;
 }
 
 .feedback__form input[type="submit"] {
-  padding: 14px 34px;
+  padding: 13px 34px;
   background-color: #95e1d3;
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: bold;
-  border: none;
   cursor: pointer;
+  border: none;
   -webkit-appearance: none;
+  border-radius: 0;
 }
 
 .footer-item__header h4 {
