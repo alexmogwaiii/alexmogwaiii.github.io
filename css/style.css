@@ -1,7 +1,5 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 html {
@@ -15,10 +13,10 @@ html {
 body {
   background-color: #ffffff;
   color: #999999;
-  line-height: 2.4rem;
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
   min-width: 1200px;
+  line-height: 24px;
 }
 
 h1,
@@ -36,10 +34,6 @@ h3 {
   color: #333333;
 }
 
-ul {
-  list-style: none;
-}
-
 .wrapper {
   width: 1200px;
   margin: 0 auto;
@@ -54,6 +48,11 @@ a {
 
 i {
   cursor: pointer;
+}
+
+p::-moz-selection {
+  background-color: #95e1d3;
+  color: #eee;
 }
 
 p::selection {
@@ -516,14 +515,20 @@ header {
   justify-content: space-between;
 }
 
-.what-we-do__features .img-wrapper {
+.what-we-do__img-wrapper {
   margin-right: 3rem;
   flex-basis: 570px;
+}
+
+.what-we-do__img-wrapper img {
+  display: block;
 }
 
 .features-desc {
   flex-basis: 600px;
   width: 600px;
+  max-height: 380px;
+  height: 100%;
 }
 
 .features-desc dl {
@@ -829,6 +834,7 @@ header {
 .our-team__gallery {
   display: flex;
   min-height: 780px;
+  cursor: -webkit-grab;
   cursor: grab
 }
 
@@ -938,10 +944,6 @@ header {
   height: 100%;
   opacity: 0;
   z-index: 1;
-
-  -webkit-transition: opacity 1s;
-  -moz-transition: opacity 1s;
-  -o-transition: opacity 1s;
   transition: opacity 1s;
 }
 
@@ -1007,7 +1009,6 @@ header {
   background-blend-mode: screen;
   background-position: 50%;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 .happy-clients__content {
@@ -1370,7 +1371,7 @@ header {
   font-weight: bold;
   cursor: pointer;
   border: none;
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   border-radius: 0;
 }
 
@@ -1399,7 +1400,8 @@ header {
 
 .footer-blog__img {
   margin-right: 20px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .footer-blog__img img {
@@ -1421,7 +1423,8 @@ header {
 .footer-item__gallery img {
   display: block;
   margin: 0 2px 2px 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .footer-gallery__more {
