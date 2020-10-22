@@ -1173,6 +1173,7 @@ header {
   transition: 1s;
   display: block;
 }
+
 .blog-img__link a:hover .blog__img {
   scale: 1.2;
 }
@@ -1371,7 +1372,7 @@ header {
   font-weight: bold;
   cursor: pointer;
   border: none;
-  /* -webkit-appearance: none; */
+  -webkit-appearance: none;
   border-radius: 0;
 }
 
@@ -1401,7 +1402,7 @@ header {
 .footer-blog__img {
   margin-right: 20px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .footer-blog__img img {
@@ -1424,7 +1425,7 @@ header {
   display: block;
   margin: 0 2px 2px 0;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .footer-gallery__more {
