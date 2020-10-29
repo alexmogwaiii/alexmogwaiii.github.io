@@ -1,2 +1,2 @@
 # alexmogwaiii.github.io
-Lending Page
+Landing Page
