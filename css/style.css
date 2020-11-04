@@ -1356,6 +1356,7 @@ header {
 .feedback__form input[type="email"]:focus {
   border-color: #95e1d3;
   color: #b1adad;
+  -webkit-appearance: none;
 }
 
 .feedback__form input[type="email"]:invalid {
@@ -1372,7 +1373,6 @@ header {
   font-weight: bold;
   cursor: pointer;
   border: none;
-  -webkit-appearance: none;
   border-radius: 0;
 }
 
